@@ -1,1 +1,38 @@
 // Mixins in here
+.button() {
+  width: 95%;
+  height: 20%;
+  background-color: @eastern-blue;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 10px;
+  padding: 6%;
+  border: 1px solid lightgray;
+  transition: .25s ease-in-out;
+  
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: lightgray;
+    border-color: @eastern-blue;
+  }
+}
+
+.popIn() {
+  animation-name: bounceIn;
+  animation-duration: .6s;
+
+  @keyframes bounceIn {
+
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    } 60% {
+      opacity: 1;
+      transform: scale(1.2);
+    } 100% {
+      transform: scale(1);
+    }
+  }
+
+}
