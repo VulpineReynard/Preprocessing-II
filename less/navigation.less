@@ -7,13 +7,23 @@
   height: 100%;
   width: 49%;
 
+  @media(max-width:500px) {
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+  }
+
   a {
     text-decoration: none;
     color: black;
     font-size: 1.7em;
-    transition: .15s ease-in-out;
+    transition: all .1s ease-in-out;
+
     &:hover {
-      transform: scale(1.2);
+      background: blanchedalmond;
+      padding: 5px;
+      border-radius: 8px;
+      transform: scale(1.1);
     }
   }
 }

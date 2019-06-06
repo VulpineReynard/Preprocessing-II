@@ -1,5 +1,5 @@
 // Mixins in here
-.button() {
+.button(@col) {
   width: 95%;
   height: 20%;
   background-color: @eastern-blue;
@@ -9,12 +9,15 @@
   padding: 6%;
   border: 1px solid lightgray;
   transition: .25s ease-in-out;
+
+  @media(max-width: 500px) {
+    padding: 3%;
+  }
   
 
   &:hover {
-    transform: scale(1.2);
-    background-color: lightgray;
-    border-color: @eastern-blue;
+    background-color: @col;
+    transform: scale(1.15);
   }
 }
 
@@ -34,5 +37,9 @@
       transform: scale(1);
     }
   }
+}
 
+.flex-col () {
+  display: flex;
+  flex-direction: column;
 }
