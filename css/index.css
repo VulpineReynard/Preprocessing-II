@@ -199,6 +199,7 @@ img {
   padding: 5px;
   border-radius: 8px;
   transform: scale(1.1);
+  box-shadow: 0 0 5px 5px blanchedalmond;
 }
 .footer {
   width: 100%;
@@ -356,7 +357,8 @@ h2 {
 .home .content-pick .destination .btn {
   width: 95%;
   height: 20%;
-  background-color: #17A2B8;
+  background-color: #58d;
+  background-blend-mode: color-burn;
   text-align: center;
   font-size: 2em;
   border-radius: 10px;
@@ -370,8 +372,9 @@ h2 {
   }
 }
 .home .content-pick .destination .btn:hover {
-  background-color: green;
+  background-color: #ccf;
   transform: scale(1.15);
+  box-shadow: 0 0 10px 5px #ccf;
 }
 .home .content-pick .destination .btn a {
   text-decoration: none;
