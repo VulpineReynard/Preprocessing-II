@@ -1,1 +1,30 @@
 // Navigation Styles here
+.navigation {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 49%;
+
+  @media @mobile {
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7em;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+      background: blanchedalmond;
+      padding: 5px;
+      border-radius: 8px;
+      transform: scale(1.1);
+      box-shadow: 0 0 5px 5px blanchedalmond;
+    }
+  }
+}

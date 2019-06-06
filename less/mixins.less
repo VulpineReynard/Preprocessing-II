@@ -1,1 +1,47 @@
 // Mixins in here
+.button(@col) {
+  width: 95%;
+  height: 20%;
+  background-color: #58d;
+  background-blend-mode: color-burn;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 10px;
+  padding: 6%;
+  border: 1px solid lightgray;
+  transition: .25s ease-in-out;
+
+  @media @mobile {
+    padding: 3%;
+  }
+  
+
+  &:hover {
+    background-color: @col;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px 5px #ccf;
+  }
+}
+
+.popIn() {
+  animation-name: bounceIn;
+  animation-duration: .6s;
+
+  @keyframes bounceIn {
+
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    } 60% {
+      opacity: 1;
+      transform: scale(1.2);
+    } 100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.flex-col () {
+  display: flex;
+  flex-direction: column;
+}
